@@ -5,21 +5,29 @@ public class questao_01 {
 
         Scanner scan = new Scanner(System.in);
 
-        int num = 0;
-        String value = "*";
+        int tamanho = 0;
+        int tamanho2 = 0;
+        int contador;
+        int contador2;
+        String espacos = "";
+        String asteriscos = "*";
+        String resposta = "";
 
-        System.out.println("Digite o valor: ");
-        num = scan.nextInt();
+        System.out.println("Digite o tamanho da escada:");
+        tamanho = scan.nextInt();
+        tamanho2 = tamanho;
 
-        for (int cont = 1; cont <= num; cont++) {
-
-            if (cont == num) {
-                System.out.print(value);
-            } else {
-                System.out.println(value);
+        for (contador = 1; contador <= tamanho; contador++) {
+            for (contador2 = 1; contador2 <= tamanho2 - 1; contador2++) {
+                espacos += " ";
             }
 
-            value += "*";
+            resposta = espacos + asteriscos;
+
+            System.out.println(resposta);
+            espacos = "";
+            tamanho2 -= 1;
+            asteriscos += "*";
         }
     }
 }

@@ -3,19 +3,19 @@ import java.util.Scanner;
 public class questao_02 {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner leitor = new Scanner(System.in);
 
         String senha = "";
-        int quant = 0;
+        int quantidade = 0;
         int sobra = 0;
 
-        System.out.println("Digite a senha: ");
-        senha = scan.next();
+        System.out.println("Digite a senha:");
+        senha = leitor.next();
 
-        quant = senha.length();
+        quantidade = senha.length();
 
-        if (quant < 6) {
-            sobra = 6 - quant;
+        if (quantidade < 6) {
+            sobra = 6 - quantidade;
 
             System.out.println(sobra);
         }
