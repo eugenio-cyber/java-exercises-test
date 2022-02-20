@@ -1,11 +1,9 @@
 
 // importação
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class questao_02 {
     public static void main(String[] args) {
-
-        Scanner leitor = new Scanner(System.in);
 
         // declaração das variáveis
         String senha = "";
@@ -13,8 +11,7 @@ public class questao_02 {
         int sobra = 0;
 
         // chamada para inserção do dado do usuário
-        System.out.println("Digite a senha:");
-        senha = leitor.next();
+        senha = JOptionPane.showInputDialog("Digite a senha:");
 
         quantidade = senha.length();
 

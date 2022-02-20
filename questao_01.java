@@ -1,11 +1,9 @@
 
 // importação
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class questao_01 {
     public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
 
         // declaração das variáveis
         int tamanho = 0;
@@ -17,8 +15,7 @@ public class questao_01 {
         String resposta = "";
 
         // chamada para inserção do dado do usuário
-        System.out.println("Digite o tamanho da escada:");
-        tamanho = scan.nextInt();
+        tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite o tamanho da escada:"));
         tamanho2 = tamanho;
 
         // looping realizado para criação do tamanho da esacada
