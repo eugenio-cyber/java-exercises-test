@@ -1,7 +1,10 @@
+
+// importação
 import javax.swing.JOptionPane;
 
 public class questao_03 {
     public static void main(String[] args) {
+
         // declaração das variáveis
         String copiaPalavraAnagrama = "";
         String substringsAnagrama = "";
